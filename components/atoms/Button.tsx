@@ -6,12 +6,12 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export default function Button({ variant = "primary", className = "", ...rest }: Props) {
   const base =
-    "inline-flex items-center justify-center px-4 py-2 rounded-base font-medium transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-40 disabled:pointer-events-none";
+    "inline-flex items-center justify-center px-4 py-2 rounded-base font-medium transition-colors duration-200 outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas disabled:opacity-40 disabled:pointer-events-none";
 
   const styles =
     variant === "primary"
-      ? "bg-primary text-white hover:bg-primary-hover active:bg-primary-active focus-visible:ring-primary"
-      : "bg-transparent text-foreground hover:bg-foreground/5 focus-visible:ring-foreground";
+      ? "bg-accent text-canvas hover:bg-accent/90 active:bg-accent/75"
+      : "bg-transparent text-default hover:bg-surface";
 
   return <button className={`${base} ${styles} ${className}`} {...rest} />;
 }
