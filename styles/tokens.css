@@ -1,0 +1,27 @@
+:root {
+  --bgColor-canvas: #0d1117;
+  --bgColor-muted: #161b22;
+  --borderColor-default: #30363d;
+  --fgColor-default: #c9d1d9;
+  --fgColor-muted: #8b949e;
+  --accent-fg: #2f81f7;
+  --success-fg: #3fb950;
+  --attention-fg: #d29922;
+  --danger-fg: #f85149;
+}
+
+@theme {
+  --color-canvas: var(--bgColor-canvas);
+  --color-surface: var(--bgColor-muted);
+  --color-default: var(--fgColor-default);
+  --color-muted: var(--fgColor-muted);
+  --color-accent: var(--accent-fg);
+  --color-success: var(--success-fg);
+  --color-attention: var(--attention-fg);
+  --color-danger: var(--danger-fg);
+  --border-color-default: var(--borderColor-default);
+  --ring-offset-color-canvas: var(--bgColor-canvas);
+  --font-ui: "Mona Sans", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius-base: 4px;
+}
